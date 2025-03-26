@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AsciiDoc Attributes Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>AsciiDoc Attributes Viewer</h1>
+  <h2>I'm pre-pre-pre-pre-alpha! I might break silently and with terrible consequences!</h2>
+
+  <div class="controls">
+    <div>
+      <label for="filter-box">Filter:</label>
+      <input type="text" id="filter-box" placeholder="Type to filter...">
+    </div>
+    <div>
+      <!-- TODO: Add branch selection. Must be release branches only. -->
+      <label for="version-select">Branch:</label>
+      <select id="version-select">
+        <option>Main</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="attributes-container">Loading attributes...</div>
+
+<script src="main.js" defer></script>
+</body>
+<footer><a href="https://github.com/maxwelldb/attr_page/issues"> Complaint box</a></footer>
+</html>
