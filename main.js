@@ -68,7 +68,7 @@
             <div class="attr-name">${attr.name}</div>
             <div class="attr-value">${attr.value}</div>
           </div>
-          <button data-value="${attr.value}">Copy</button>
+          <button data-name="${attr.name}">Copy</button>
         </div>
       `;
     }
@@ -104,7 +104,7 @@
 
     container.addEventListener('click', e => {
       if (e.target.tagName === 'BUTTON') {
-        navigator.clipboard.writeText(e.target.dataset.value)
+        navigator.clipboard.writeText(e.target.dataset.name)
           .then(() => alert('Copied!'))
           .catch(err => console.error('Copy failed:', err));
       }
